@@ -1,0 +1,716 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 2;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+li {
+  line-height: 2;
+}
+
+/* --- Header --- */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}  
+
+.topnav {
+  overflow: hidden;
+  background-color: #588F79;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.topnav img {
+  width: 160px;
+  display: block;
+  padding-right: 1rem;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  color: white;
+  text-decoration: underline;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*--- Footer --- */
+footer {
+  text-align: center;
+  background-color: #588F79; 
+  color: white;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_item {
+  padding: 2%;
+}
+
+/*--- Sociale medier ---*/
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a {
+  margin: 6px;
+  text-decoration: none;
+}
+/*---Ikonbilleder---*/
+.social-icons img {
+  width: 40px; 
+  height: auto;
+}
+
+/* --- Øverste billede + overskrift på billede + brødtekst på alle sider --- */
+.hovedtekst {
+    text-align: left; 
+    padding: 40px 12% 40px 12%;
+}
+
+.hovedtekst h1 {
+    padding: 30px 0 10px 0;
+}
+
+.øverste_billede img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+.øverste_billede {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.overskrift_øverstebillede {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 6vw;
+  font-weight: 500;
+  width: 100%;
+}
+
+.underoverskrift_øverstebillede {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 4vw;
+  font-weight: 400;
+}
+
+/* --- Forside - Naturbillede --- */
+.forside_natur_billede img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*--- Forside - Seneste nyheder og events ---*/
+.nyheder_hovedoverskrift_forside {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.nyheder_overskrift_forside {
+    text-align: center;
+    padding: 3%;
+}
+.nyheder_container_forside {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px;
+  margin: 0 12%;
+}
+
+.nyheder_item_forside {
+  text-align: center;
+  padding: 20px;
+}
+
+.nyheder_item_forside img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+/*--- Forside - Nyhedsbrev ---*/
+form {
+  border: 3px solid #ebe4d9;
+  font-family: Arial;
+  margin: 30px 12% 50px 12%;
+}
+  
+.container_nyhedsbrev {
+  padding: 20px;
+  background-color: #ebe4d9;
+  text-align: center;
+}
+
+.container_nyhedsbrev_navnogmail {
+  background-color: #ebe4d9;
+  text-align: center;
+}
+  
+input[type=text], input[type=submit] {
+  width: 60%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  
+input[type=submit] {
+  background-color: #588F79;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 40%;
+}
+  
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.container_nyhedsbrev_afmelding {
+  padding: 0px 20px 20px 20px;
+  background-color: #ebe4d9;
+  text-align: center;
+}
+
+.afmelding_tekst {
+  font-size: 14px;
+}
+
+/* --- Underside - Alkoholfri øl --- */
+.alkoholfriøl_container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 12%;
+}
+
+.alkoholfriøl_container, h1 h2 {
+  text-align: center;
+}
+
+.alkoholfriøl_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.alkoholfriøl_item {
+  text-align: center;
+}
+
+.alkoholfriøl_item img {
+  width: 100%;
+  height: auto;
+}
+
+.alkoholfriøl_link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Underside - Den energiske --- */
+.denenergiske_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 40px;
+  grid-template-areas:
+    "denenergiske_navntilbage"
+    "denenergiske_billede"
+    "denenergiske_beskrivelse"
+    "denenergiske_informationer"
+    "denenergiske_næringsindhold";
+  margin: 0 12%;
+}
+
+.Denenergiske_navntilbage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.tilbage_knap {
+  background-color:#588F79;
+  color: white;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+.denenergiske_billede { grid-area: denenergiske_billede; }
+
+.denenergiske_billede img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.denenergiske_beskrivelse {
+  grid-area: denenergiske_beskrivelse;
+}
+
+.denenergiske_informationer li {
+  margin-bottom: 7px;
+  list-style-type: disc;
+}
+
+.denenergiske_informationer {
+  grid-area: denenergiske_informationer;
+}
+
+.denenergiske_næringsindhold {
+  grid-area: denenergiske_næringsindhold; 
+  display: flex;
+  justify-content: center;
+}
+
+.grøn_box {
+  background-color: #e6e8e6;
+  padding: 28px;
+  color: black;
+  display: inline-block; 
+  width: 100%;
+}
+
+.grøn_box ul {
+  list-style-type: none;
+}
+
+/*--- Underside - Events med samarbejdspartnere --- */
+.events_container {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 40px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "events_introduktion"
+    "events_pakhus77_billede"
+    "events_pakhus77_tekst"
+    "events_creativespace_billede"
+    "events_creativespace_tekst";
+    margin: 50px 12%;
+}
+
+.events_creativespace_tekst { grid-area: events_introduktion; }
+.events_pakhus77_billede { grid-area: events_pakhus77_billede; }
+
+.events_pakhus77_tekst { grid-area: events_pakhus77_tekst; }
+
+.events_creativespace_billede { grid-area: events_creativespace_billede; }
+
+.events_creativespace_tekst { grid-area: events_creativespace_tekst; }
+
+.events_pakhus77_billede img,
+.events_creativespace_billede img {
+    max-width: 100%; 
+    height: auto;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.overskrift_events {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.events_container li {
+  list-style-type: disc;
+}
+
+/*--- Eventkalender nederst på siden om events med samarbejdsparntere --- */
+.eventkalender_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 40px; 
+  text-align: center;
+  margin: 3px 5% 10px 5%;
+}
+
+.eventkalender_grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.event_caption {
+  text-align: left;
+}
+
+.ikon-liste {
+  list-style: none;
+  padding: 0;
+}
+
+.ikon-liste li {
+  position: relative;
+  padding-left: 30px; 
+  margin-bottom: 10px; 
+}
+
+.ikon-liste li.sted_ikon {
+  background: url('img/stedsymbol.png') no-repeat left center; 
+  background-size: 16px; 
+  padding-top: 2px; 
+}
+
+.ikon-liste li.kalender_ikon {
+  background: url('img/kalendersymbol.png') no-repeat left center; 
+  background-size: 16px; 
+  padding-top: 2px; 
+}
+
+.ikon-liste li.penge_ikon {
+  background: url('img/pengesymbol.png') no-repeat left center; 
+  background-size: 16px; 
+  padding-top: 2px;
+}
+
+.læs_mere_box {
+  background-color: #ebe4d9;
+  padding: 10px; 
+  max-width: 100px;
+  text-align: center;
+}
+
+/*--- Underside - Vores historie og værdier --- */
+.voreshistorie_container {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto; 
+  gap: 30px; 
+  grid-template-areas: 
+    "historie_stiftere"
+    "historie_billedestiftere"
+    "historie_nyretning"
+    "historie_udvidelse"
+    "historie_billedeøl"; 
+  margin: 50px 12%;
+}
+
+.stiftere_billedetekst {
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.historie_billedestiftere img,
+.historie_billedeøl img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*--- Ekstra side - ombygning ---*/
+.ombygning_tekst {
+  text-align: center;
+  margin-top: 2%;
+}
+.ombygning_billede {
+  margin-left: 12%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  max-width: 80%;
+}
+
+/*--- Ekstra side, når man klikker ind på ''Læs mere'' knappen i eventkalender ---*/
+.eventkalender_tekst {
+  text-align: center;
+  margin-top: 2%;
+}
+.eventkalender_billede {
+  margin-left: 12%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  max-width: 80%;
+}
+
+/* --- Media header --- */
+@media screen and (max-width: 768px) {
+.topnav a:not(:first-child),
+.dropdown .dropbtn {
+  display: none;
+}
+
+.topnav {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topnav a.icon {
+  float: right;
+  display: block;
+  font-size: 38px;
+}
+
+.topnav.responsive {
+  position: relative;
+}
+
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav.responsive .dropdown {
+  float: none;
+}
+
+.topnav.responsive .dropdown-content {
+  position: relative;
+}
+
+.topnav.responsive .dropdown .dropbtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+}
+
+/* --- Media min width 768px ---*/
+@media (min-width: 768px) {
+
+/* --- Media - overskrift øverste billede ---*/
+.overskrift_øverstebillede {
+  font-size: 4.5vw;
+}
+
+.underoverskrift_øverstebillede {
+  font-size: 3vw;
+}
+
+/* ---Media - Footer---*/
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}  
+  
+/* --- Media - Nyheder forside ---*/
+.nyheder_container_forside {
+  grid-template-columns: 1fr 1fr;
+}
+    
+/* --- Media - Underside, alkoholfri øl ---*/
+.alkoholfriøl_grid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+/* --- Media - Underside, den energiske ---*/
+.denenergiske_container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  grid-template-areas:
+    "denenergiske_billede denenergiske_navntilbage"
+    "denenergiske_billede denenergiske_beskrivelse"
+    "denenergiske_næringsindhold denenergiske_informationer";
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.denenergiske_billede {
+  margin-top: 30px;
+}
+
+/* --- Media - Underside, events med samarbejdspartnere ---*/
+.events_container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 50px 40px;
+  grid-template-areas:
+    "events_introduktion events_introduktion"
+    "events_pakhus77_tekst events_pakhus77_billede"
+    "events_creativespace_billede events_creativespace_tekst";
+}
+    
+.events_introduktion { grid-area: events_introduktion; }
+    
+.events_pakhus77_tekst { grid-area: events_pakhus77_tekst; }
+    
+.events_pakhus77_billede { grid-area: events_pakhus77_billede; }
+    
+.events_creativespace_billede { grid-area: events_creativespace_billede; }
+    
+.events_creativespace_tekst { grid-area: events_creativespace_tekst; }
+    
+.eventkalender_grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* --- Media - Underside, vores historie og værdier --- */
+.voreshistorie_container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto; 
+  gap: 40px; 
+  grid-template-areas: 
+    "historie_stiftere historie_billedestiftere"
+    "historie_nyretning historie_nyretning"
+    "historie_billedeøl historie_udvidelse"; 
+}
+
+.historie_billedestiftere { grid-area: historie_billedestiftere; }
+.historie_stiftere { grid-area: historie_stiftere; }
+.historie_nyretning { grid-area: historie_nyretning; }
+.historie_udvidelse { grid-area: historie_udvidelse; }
+.historie_billedeøl { grid-area: historie_billedeøl; }
+}
+
+/* --- Media min width 1024px- Eventkalender nederst på undersiden om events med samarbejdspartnere --- */
+@media screen and (min-width: 1024px) {
+.eventkalender_grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* --- Media min width 1024px- Underside, den energiske --- */
+.denenergiske_container {
+  margin-left: 12%;
+  margin-right: 12%;
+}
+}
+
+/* --- Media min width 1200px - Underside, Vores historie og værdier --- */
+@media screen and (min-width: 1200px) {
+.voreshistorie_container {
+  margin: 50px 20%; 
+}
+
+/* --- Media min width 1200px - Underside, den energiske --- */
+.denenergiske_container {
+  margin-left: 17%;
+  margin-right: 17%;
+}
+}

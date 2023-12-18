@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrøjborgBryg</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="mobile-nav.js" defer></script>
+</head>
+
+<body>
+     <!-- Header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href='alkoholfriol.html';">Alkoholfri øl</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Bliv klogere
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Fordele ved alkoholfri øl</a>
+                    <a href="ombygning.html">Anledninger til alkoholfri øl</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Arrangementer
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Alkoholfri ølsmagning</a>
+                    <a href="events.html">Events med samarbejdspartnere</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Om bryggeriet
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="voreshistorie.html">Vores historie og værdier</a>
+                    <a href="ombygning.html">Altid økologisk</a>
+                    <a href="ombygning.html">Forhandlere</a>
+                    <a href="ombygning.html">Kontakt os</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+
+    <!-- Main indhold -->
+    <main>
+         <!-- Øverste billede -->
+        <div class="øverste_billede">
+          <img src="img/forsideoeverst.jpeg" alt="Velkommen til TrøjborgBryg">
+          <div class="overskrift_øverstebillede">TrøjborgBryg</div> 
+          <div class="underoverskrift_øverstebillede">Smagsfuld og alkoholfri øl</div>
+        </div>
+         <!-- Brødtekst --> 
+        <div class="hovedtekst">
+            <p>
+            TrøjborgBryg er mere end bare et bryggeri; det er et sted, hvor passion for smag møder engagement for miljø. Vi er stolte af at tilbyde en eksklusiv kollektion af alkoholfrie øl, skabt med omhu og dedikation til bæredygtighed og grøn omstilling og med et indhold, der understøtter en sund livsstil. De naturlige ingredienser og et indhold bestående af færre kalorier end det sædvanlige gør vores alkoholfrie øl velegnede til enhver anledning og til enhver person. Både til dig, der søger alkoholfri øl med smag af traditionel øl, og til dig, der søger nye smagsoplevelser udover det almindelige.  
+            </p>
+            <h1>Økologisk bryggeri og bæredygtig produktion</h1>
+            <p>
+            TrøjborgBryg er dedikeret til bæredygtighed og økologi. Vores bryggeri er 100% økologisk, og vi er i front inden for den grønne omstilling. Vi har opnået CO2-neutralitet i hele processen, fra brygning til tapning af vores øl.
+            <br>
+            <br>
+            Vi går også skridtet videre ved at integrere genanvendelse i vores proces. Fra udvælgelsen af ingredienser til brygning og tapning stræber vi efter at mindske vores miljømæssige fodaftryk og skabe et cirkulært system. 
+            </p>
+        </div>
+
+         <!-- Naturbillede med økologisk certifikat -->
+        <div class="forside_natur_billede">
+            <img src="img/forsidenatur.jpeg" alt="Økologisk">
+        </div >  
+
+        <h1 class="nyheder_hovedoverskrift_forside">Seneste nyheder og events</h1>
+
+        <div class="nyheder_container_forside">
+            <div class="nyheder_item_forside">
+                <a href="ombygning.html">
+                    <img src="img/forsideoelsmagning.jpeg" alt="alkoholfri ølsmagning">
+                </a>
+                <h2 class="nyheder_overskrift_forside">Alkoholfri ølsmagning</h2>
+                <p>Udforsk nye smage, bliv klogere på vores alkoholfri øl og skab mindeværedige stunder til vores månedlige ølsmagninger. 
+                       Læs mere om det <u><a href="ombygning.html">her</a></u>.</p>
+            </div>
+            <div class="nyheder_item_forside">
+                <a href="events.html">
+                    <img src="img/forsideevents.jpeg" alt="events med samarbejdspartnere">
+                </a>
+                <h2 class="nyheder_overskrift_forside">Events med samarbejdspartnere</h2>
+                <p>Deltag i vores events i samarbejde med Creative Space og Pakhus77, hvor alkoholfri øl kombineres med med kreativitet og motion. 
+                    Læs mere om det <u><a href="events.html">her</a></u>.</p>
+            </div>
+        </div>
+
+         <!-- Nyhedsbrev -->
+        <form action="/action_page.php">
+            <div class="container_nyhedsbrev">
+                <h2>TILMELD DIG VORES NYHEDSBREV</h2>
+                <p>Ved at tilmelde dig vores nyhedsbrev accepterer du, at TrøjborgBryg kan sende e-mails med tilbud, nye øl, arrangementer og meget mere.</p>
+            </div>
+
+            <div class="container_nyhedsbrev_navnogmail">
+                <input type="text" placeholder="Navn" name="name" required>
+                <input type="text" placeholder="E-mail" name="mail" required>
+            </div>
+
+            <div class="container_nyhedsbrev">
+                <input type="submit" value="TILMELD MIG">
+            </div>
+
+            <div class="container_nyhedsbrev_afmelding">
+                <p class="afmelding_tekst">Du kan til enhver tid afmelde dig nyhedsbrevet igen.</p>
+            </div>
+        </form>
+    </main>
+        
+    <!-- Footer -->
+    <footer>
+        <!-- Adresse og åbningstider -->
+        <section class="footer_container">
+            <div class="footer_item">
+                <h3>Bryggeriets adresse</h3>
+                <p>
+                Tordenskjoldsgade 5, <br>
+                DK-8200 Aarhus N <br>
+                Danmark
+                </p>
+                <br>
+                <h3>Åbningstider</h3>
+                <p>
+                Mandag-torsdag: 10-18 <br>
+                Fredag-lørdag: 12-23 <br>
+                </p>
+            </div>
+        
+         <!-- Sociale medier -->
+            <div class="footer_item">
+                <h3>Sociale medier</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                    <a href="#" target="_blank"><img src="img/instragram.png" alt="instagram"></a>
+                    <a href="#" target="_blank"><img src="img/tiktok.png" alt="tiktok"></a>
+                </div>
+            </div>
+        
+            <!-- Kontakt -->
+            <div class="footer_item"> 
+                <h3>Kontakt</h3>
+                <p>
+                + 45 27 59 09 18 <br>
+                Trøjborgbryg@gmail.com <br><br>
+                Cvr.  39220913 
+                </p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

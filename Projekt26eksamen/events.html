@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrøjborgBryg</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="mobile-nav.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href='alkoholfriol.html';">Alkoholfri øl</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Bliv klogere
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Fordele ved alkoholfri øl</a>
+                    <a href="ombygning.html">Anledninger til alkoholfri øl</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Arrangementer
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="ombygning.html">Alkoholfri ølsmagning</a>
+                    <a href="events.html">Events med samarbejdspartnere</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Om bryggeriet
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="voreshistorie.html">Vores historie og værdier</a>
+                    <a href="ombygning.html">Altid økologisk</a>
+                    <a href="ombygning.html">Forhandlere</a>
+                    <a href="ombygning.html">Kontakt os</a>
+                </div>
+            </div>
+        
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+    
+    <!-- Main indhold -->
+    <main>
+    <!-- Øverste billede -->
+        <div class="øverste_billede">
+            <img src="img/arrangementeroeverst.jpeg" alt="Events med samarbejdspartnere">
+            <div class="overskrift_øverstebillede">Events med samarbejdspartnere</div>
+        </div> 
+
+        <!-- Indledende tekst -->
+        <div class="events_container">
+            <div class="events_introduktion">
+                <p>
+                Hos TrøjborgBryg er vi dedikerede til at skabe unikke oplevelser, der forener sundhed, socialt samvær, kreativitet og gode smagsoplevelser. Vi har indgået samarbejder med to fantastiske virksomheder, Pakhus 77 og Creative Space, der hver især tilfører en særlig dimension til vores arrangementer. 
+                <br> <br>
+                Vores events finder sted den første torsdag i hver måned, og tilmelding er efter først til mølle princippet. Oplev, hvordan vores alkoholfri øl kan kombineres med forskellige typer af anledninger – lige fra den fysiske aktivitet til de sociale og kreative stunder. Så hvad venter du på? Tag fat i din ven, kæreste eller en helt tredje og skynd dig at tilmelde dig nederst på siden i vores kalenderoversigt. 
+                </p>
+            </div>
+            <!-- Billede + tekst om Pakhus 77 -->
+            <div class="events_pakhus77_billede">
+                <img src="img/pakhus77.png" alt="Pakhus 77">
+            </div>
+            <div class="events_pakhus77_tekst">
+                <h2>TrøjborgBryg x Pakhus 77</h2>
+                <ul>
+                    <li>Nyd nogle timer med padeltennis og socialt samvær på Pakhus 77.</li>
+                    <li>Til både begyndere og erfarne spillere.</li>
+                    <li>Uanset dit niveau kan man forvente en sjov og udfordrende oplevelse.</li>
+                    <li>Efter kampene kan man nyde en af vores seks varianter af alkoholfri øl.</li>
+                    <li>Er du mere nysgerrig på Pakhus 77, og hvad de kan tilbyde? Så kan du læse mere om dem <u><a href="https://pakhus77.dk/" target="_blank">her</a></u>.</li> 
+                </ul>
+            </div>
+            <!-- Billede + tekst om Creative Space -->
+            <div class="events_creativespace_billede">
+                <img src="img/creativespace.png" alt="Creative Space7">
+            </div>
+            <div class="events_creativespace_tekst">
+                <h2>TrøjborgBryg x Creative Space</h2>
+                <ul>
+                    <li>Creative Space er kendt for at fremme kreativitet og håndværk.</li>
+                    <li>Vores samarbejde giver mulighed for at male sin egen keramik. </li>
+                    <li>Deltagerne bliver undervejs budt på en af vores lækre alkoholfrie øl - efter eget valg.</li>
+                    <li>Kom alene eller sammen med en ven; der er plads til alle, kreative sjæle.</li>
+                    <li>Har du lyst til at læse mere om Creative Space, kan du klikke <u><a href="https://creative-space.dk/" target="_blank">her</a></u>.</li> 
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Event kalender -->
+        <h1 class="overskrift_events" >Kommende events</h1>
+        <div class="eventkalender_grid">
+            <div class="event_caption">
+                <img src="img/padel1.jpg" alt="TrøjborgBryg x Pakhus77 event">
+                <h3>TrøjborgBryg x Pakhus 77</h3>
+                <ul class="ikon-liste">
+                    <li class="sted_ikon">Hveensgade 5, 8000 Aarhus C</li>
+                    <li class="kalender_ikon">Torsdag d. 4. jan. 2024, kl. 18</li>
+                    <li class="penge_ikon">150 kr.</li>
+                </ul>
+                <div class="læs_mere_box">
+                    <a href="eventkalender.html">Læs mere</a>
+                </div>
+            </div>
+            <div class="event_caption">
+                <img src="img/creativespace1.jpeg" alt="TrøjborgBryg x Creative Space event">
+                <h3>TrøjborgBryg x Creative Space</h3>
+                <ul class="ikon-liste">
+                    <li class="sted_ikon">Studsgade 7, 8000 Aarhus C</li>
+                    <li class="kalender_ikon">Torsdag d. 8. feb. 2024, kl. 18</li>
+                    <li class="penge_ikon">50 kr. ekskl. keramik</li>
+                </ul>
+                <div class="læs_mere_box">
+                    <a href="eventkalender.html">Læs mere</a>
+                </div>
+            </div>
+            <div class="event_caption">
+                <img src="img/padel2.jpeg" alt="TrøjborgBryg x Pakhus77 event">
+                <h3>TrøjborgBryg x Pakhus 77</h3>
+                <ul class="ikon-liste">
+                    <li class="sted_ikon">Hveensgade 5, 8000 Aarhus C</li>
+                    <li class="kalender_ikon">Torsdag d. 7. mar. 2024, kl. 18</li>
+                    <li class="penge_ikon">150 kr.</li>
+                </ul>
+                <div class="læs_mere_box">
+                    <a href="eventkalender.html">Læs mere</a>
+                </div>
+            </div>
+            <div class="event_caption">
+                <img src="img/creativespace2.jpeg" alt="TrøjborgBryg x Creative Space event">
+                <h3>TrøjborgBryg x Creative Space</h3>
+                <ul class="ikon-liste">
+                    <li class="sted_ikon">Studsgade 7, 8000 Aarhus C</li>
+                    <li class="kalender_ikon">Torsdag d. 4. apr. 2024, kl. 18</li>
+                    <li class="penge_ikon">50 kr. ekskl. keramik.</li>
+                </ul>
+                <div class="læs_mere_box">
+                    <a href="eventkalender.html">Læs mere</a>
+                </div>
+            </div>
+            <div class="event_caption">
+                <img src="img/padel3.jpeg" alt="TrøjborgBryg x Pakhus77 event">
+                <h3>TrøjborgBryg x Pakhus 77</h3>
+                <ul class="ikon-liste">
+                    <li class="sted_ikon">Hveensgade 5, 8000 Aarhus C</li>
+                    <li class="kalender_ikon">Torsdag d. 2. maj 2024, kl. 18</li>
+                    <li class="penge_ikon">150 kr.</li>
+                </ul>
+                <div class="læs_mere_box">
+                    <a href="eventkalender.html">Læs mere</a>
+                </div>
+            </div>
+            <div class="event_caption">
+                <img src="img/creativespace3.jpeg" alt="TrøjborgBryg x Creative Space event">
+                <h3>TrøjborgBryg x Creative Space</h3>
+                <ul class="ikon-liste">
+                    <li class="sted_ikon">Studsgade 7, 8000 Aarhus C</li>
+                    <li class="kalender_ikon">Torsdag d. 6. jun 2024, kl. 18</li>
+                    <li class="penge_ikon">50 kr. ekskl. keramik</li>
+                </ul>
+                <div class="læs_mere_box">
+                    <a href="eventkalender.html">Læs mere</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Adresse og åbningstider -->
+        <section class="footer_container">
+            <div class="footer_item">
+                <h3>Bryggeriets adresse</h3>
+                <p>
+                Tordenskjoldsgade 5, <br>
+                DK-8200 Aarhus N <br>
+                Danmark
+                </p>
+                <br>
+                <h3>Åbningstider</h3>
+                <p>
+                Mandag-torsdag: 10-18 <br>
+                Fredag-lørdag: 12-23 <br>
+                </p>
+            </div>
+        
+            <!-- Sociale medier -->
+            <div class="footer_item">
+                <h3>Sociale medier</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                    <a href="#" target="_blank"><img src="img/instragram.png" alt="instagram"></a>
+                    <a href="#" target="_blank"><img src="img/tiktok.png" alt="tiktok"></a>
+                </div>
+            </div>
+        
+            <!-- Kontakt -->
+            <div class="footer_item"> 
+                <h3>Kontakt</h3>
+                <p>
+                + 45 27 59 09 18 <br>
+                Trøjborgbryg@gmail.com <br><br>
+                Cvr.  39220913 
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    
+    </body>
+    </html>
